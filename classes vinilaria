@@ -1,0 +1,30 @@
+@startuml
+class Produto{
+-tipoproduto
+-quantidade
+-posicaonoranKing
++Inserirproduto()
++Inserirvenda()
++MostrarRanking()
++MostrarEstoque()
+}
+note bottom of Produto:Atualizar ranking \ne atualizar a quantidade \nde produtos na funçao inserirvenda().
+class Artista{
+-Nomeartista
++Escolherartista()
+}
+Artista "0.." -- Produto
+class Materiaprima{
+-tipoMaterial
+-quantidade
+-quantidademinima()
++InserirMaterial()
++RetirarMaterial()
++VisualizarMaterial()
+}
+class Tinta{
+-cor
+}
+Tinta --|> Materiaprima
+note left of Materiaprima:Na funcao retirar material \ndeve-se conferir a quantidade\n de material e avisar \nse ele atingiu a quantidade minima.
+@enduml
