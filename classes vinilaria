@@ -17,7 +17,7 @@ Artista "0.." -- Produto
 class Materiaprima{
 -tipoMaterial
 -quantidade
--quantidademinima()
+-quantidademinima
 +InserirMaterial()
 +RetirarMaterial()
 +VisualizarMaterial()
